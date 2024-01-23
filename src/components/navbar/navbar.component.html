@@ -1,0 +1,9 @@
+<ul>
+  @for(menuItem of menu;track menuItem.name){
+    <li><a [class]="menuItem.active?'active':''" href="#" (click) = "hadleClick(menuItem)">
+      <span class="material-symbols-outlined">
+    desktop_windows
+</span>{{menuItem.name}}</a></li>
+  }
+</ul>
+
